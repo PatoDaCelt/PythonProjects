@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e7fee79c348d54c321499a43660d2668 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e7fee79c348d54c321499a43660d2668" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e7fee79c348d54c321499a43660d2668 = L.map(
+                "map_e7fee79c348d54c321499a43660d2668",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1752ec4b3b2952c1d6590bcd2d3a8f14 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "My Data Attribution",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_1752ec4b3b2952c1d6590bcd2d3a8f14.addTo(map_e7fee79c348d54c321499a43660d2668);
+        
+    
+            var poly_line_ead95c6316782a47007fa57d7d36724b = L.polyline(
+                [[-71.35187184029587, -73.65596371122263], [-71.37414438261371, -73.7198616197515], [-71.39104257597315, -73.784922248007], [-71.40096445097313, -73.8510422431244], [-71.40241139107732, -74.05004818388048]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e7fee79c348d54c321499a43660d2668);
+        
+    
+            poly_line_ead95c6316782a47007fa57d7d36724b.bindTooltip(
+                `<div>
+                     Coast
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var feature_group_10ca331d0143297b230842d65d4c089d = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_26b52f6b65ae079f2565db8bda32ea91 = L.marker(
+                [0.0, 0.0],
+                {
+}
+            ).addTo(feature_group_10ca331d0143297b230842d65d4c089d);
+        
+    
+            var icon_1e36523c07d8d079f141ca62de5fc607 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+                marker_26b52f6b65ae079f2565db8bda32ea91.setIcon(icon_1e36523c07d8d079f141ca62de5fc607);
+            
+    
+            var marker_aa7d896dbe19cf18b86b986c162289fc = L.marker(
+                [3.0, 0.0],
+                {
+}
+            ).addTo(feature_group_10ca331d0143297b230842d65d4c089d);
+        
+    
+            var icon_f5bd36ec53ca242b56ec49c41438ad8a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6eb5eb0becb21cf828a19fafbb779016 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2318bc29461f635d1b03a9a127b7e9dd = $(`<div id="html_2318bc29461f635d1b03a9a127b7e9dd" style="width: 100.0%; height: 100.0%;">Mt. Hood Meadows</div>`)[0];
+                popup_6eb5eb0becb21cf828a19fafbb779016.setContent(html_2318bc29461f635d1b03a9a127b7e9dd);
+            
+        
+
+        marker_aa7d896dbe19cf18b86b986c162289fc.bindPopup(popup_6eb5eb0becb21cf828a19fafbb779016)
+        ;
+
+        
+    
+    
+            marker_aa7d896dbe19cf18b86b986c162289fc.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_aa7d896dbe19cf18b86b986c162289fc.setIcon(icon_f5bd36ec53ca242b56ec49c41438ad8a);
+            
+    
+            feature_group_10ca331d0143297b230842d65d4c089d.addTo(map_e7fee79c348d54c321499a43660d2668);
+        
+    
+            var feature_group_525c46dc5070de955ed86558d1b15ba4 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_9d36be475db75f9b4b16b3f266045877 = L.marker(
+                [0.0, 2.0],
+                {
+}
+            ).addTo(feature_group_525c46dc5070de955ed86558d1b15ba4);
+        
+    
+            var icon_e746440bb02a0dfc1953bbb7d920832d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b1f14854a6ee44b483ec09373ef0f9c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b031d73010e4c66bd63f04aeea759224 = $(`<div id="html_b031d73010e4c66bd63f04aeea759224" style="width: 100.0%; height: 100.0%;">Timberline Lodge</div>`)[0];
+                popup_b1f14854a6ee44b483ec09373ef0f9c9.setContent(html_b031d73010e4c66bd63f04aeea759224);
+            
+        
+
+        marker_9d36be475db75f9b4b16b3f266045877.bindPopup(popup_b1f14854a6ee44b483ec09373ef0f9c9)
+        ;
+
+        
+    
+    
+            marker_9d36be475db75f9b4b16b3f266045877.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9d36be475db75f9b4b16b3f266045877.setIcon(icon_e746440bb02a0dfc1953bbb7d920832d);
+            
+    
+            feature_group_525c46dc5070de955ed86558d1b15ba4.addTo(map_e7fee79c348d54c321499a43660d2668);
+        
+</script>
+</html>
