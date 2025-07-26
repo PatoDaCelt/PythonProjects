@@ -1,6 +1,6 @@
 import folium
 
-m = folium.Map([0,0], zoom_start=5, tiles="OpenStreetMap", attr='My Data Attribution')
+m = folium.Map([25.693725231761196, -100.35027849787161], zoom_start=15, tiles="OpenStreetMap", attr='My Data Attribution')
 
 # 'https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png'
 
@@ -15,21 +15,21 @@ trail_coordinates = [
 folium.PolyLine(trail_coordinates, tooltip="Coast").add_to(m)
 
 group_1 = folium.FeatureGroup("first group").add_to(m)
-folium.Marker((0, 0), 
+folium.Marker((25.689037111399553, -100.3499589868933), 
     icon=folium.Icon("red")
 ).add_to(group_1)
 
-folium.Marker((3, 0), 
+folium.Marker((25.693725231761196, -100.35027849787161), 
     tooltip="Click me!",
-    popup="Mt. Hood Meadows",
+    popup="CIDICS - UANL",
     icon=folium.Icon("red")
 ).add_to(group_1)
 
 group_2 = folium.FeatureGroup("second group").add_to(m)
-folium.Marker((0, 2),
+folium.Marker((25.6963718444343, -100.34358439088746),
     tooltip="Click me!",
     popup="Timberline Lodge",
     icon=folium.Icon(icon="cloud", color="green")
 ).add_to(group_2)
 
-m.save("index.html")
+m.save("example.html")
